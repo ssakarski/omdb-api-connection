@@ -50,7 +50,7 @@ namespace OMDB_kursova
             //Getting the movie info from the API
             try
             {
-                var json = await client.GetStringAsync(new Uri("http://www.omdbapi.com/?t=" + title + "&apikey=6484425e"));
+                var json = await client.GetStringAsync(new Uri("http://www.omdbapi.com/?t=" + title + "&apikey=xxxxxxxx"));
                 // Deserializing the json information
                 var mov = JsonConvert.DeserializeObject<RootObject>(json);
 
@@ -61,7 +61,7 @@ namespace OMDB_kursova
                 //if (Convert.ToBoolean(mov.Response) == false || (title == "" || title == "not available"))
                 //{
                 //    title = "Titanic";
-                //    json = await client.GetStringAsync(new Uri("http://www.omdbapi.com/?t=" + title + "&apikey=6484425e"));
+                //    json = await client.GetStringAsync(new Uri("http://www.omdbapi.com/?t=" + title + "&apikey=xxxxxxxx"));
                 //    mov = JsonConvert.DeserializeObject<RootObject>(json);
                 //}
 
